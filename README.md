@@ -11,7 +11,7 @@ This solution was created to automate the process of adding relevant Google Tren
 <WIP> Detail Setup Process written in Medium.com -- [LINK](https://WIP)
 
 ## Important Notes
-- This solution will **NOT** guaranty any Search Ads performace 
+- This solution will **NOT** guarant any Search Ads performace 
 - pytrends API is not a Google Official API but it can be used for free
 - Running the Python code daily basis will incur some Google Cloud cost
 - It will not work if the query does not have any organic search volume to capture the search trend. 
@@ -127,5 +127,6 @@ The sample code will update each four Spreadsheet sheets keywords into separate 
 <img width="907" alt="スクリーンショット 2020-06-13 19 08 30" src="https://user-images.githubusercontent.com/62479342/84576036-8c1cd700-ada9-11ea-92b9-4d59f04fdc9d.png">
 
 
-## Thank you for reading:)
+
+## Thank you for reading :)
 
