@@ -11,7 +11,7 @@ This solution was created to automate the process of adding relevant Google Tren
 <WIP> Detail Setup Process written in Medium.com -- [LINK](https://WIP)
 
 ## Important Notes
-- This solution will **NOT** guarant any Search Ads performace 
+- This solution will **NOT** guarantee any Search Ads performance improvement
 - pytrends API is not a Google Official API but it can be used for free
 - Running the Python code daily basis will incur some Google Cloud cost
 - It will not work if the query does not have any organic search volume to capture the search trend. 
