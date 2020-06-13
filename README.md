@@ -79,10 +79,33 @@ This Topic will recieve message from Google Cloud Scheduler which we will set up
 
 ### Setup Google Cloud Scheduler
 
+- Create a new Google Cloud Scheduler job
+- Set the frequency in unix-cron format. Weekly or Daily might be already enough.
+- Select your timezone
+- Target Pub/Sub
+- Input the Cloud Pub/Sub Topic name you have created
+
 <img width="540" alt="スクリーンショット 2020-06-13 18 50 13" src="https://user-images.githubusercontent.com/62479342/84575766-aa81d300-ada7-11ea-94d4-2461c270ec27.png">
 
 
 ### Setup Google Cloud Function
+
+- Create a new Google Cloud Function
+- Set the frequency in unix-cron format. Weekly or Daily might be already enough.
+- Select your timezone
+- Target Pub/Sub
+- Set Payload with following parameters in JSON format
+  - "query" → the query you want to reference in Google Trends
+  - "language" 
+  - "location"
+  - "time_frame" → date range you want to refenerence
+  - "ss_key" → Spreadsheet key you get from Spreadsheet URL.
+
+**exammple)** Spreadsheet key for 
+https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4/edit#gid=0
+
+is **"1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4"** after d/ till /edit.
+
 
 <img width="545" alt="スクリーンショット 2020-06-13 19 14 26" src="https://user-images.githubusercontent.com/62479342/84576168-8d023880-adaa-11ea-82b6-698de4ab05f1.png">
 
