@@ -84,5 +84,16 @@ This Topic will recieve message from Google Cloud Scheduler which we will set up
 
 ### Setup Google Cloud Function
 
+<img width="545" alt="スクリーンショット 2020-06-13 19 14 26" src="https://user-images.githubusercontent.com/62479342/84576168-8d023880-adaa-11ea-82b6-698de4ab05f1.png">
 
 ### Setup Google Ads Script
+
+<img width="907" alt="スクリーンショット 2020-06-13 19 08 30" src="https://user-images.githubusercontent.com/62479342/84576036-8c1cd700-ada9-11ea-92b9-4d59f04fdc9d.png">
+
+Spreadsheet needs following four tabs. 
+
+- rising_brand
+- rising_nonbrand
+- top_brand
+- top_nonbrand
+
