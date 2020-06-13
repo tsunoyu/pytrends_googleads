@@ -2,7 +2,7 @@
 
 ## Overview
 
-This solution was created to automate the process of adding relevant Google Trends Rising and Top related queries into Google Ads Search Campaigns. It would help reduce some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
+This solution was created to automate the process of adding relevant Google Trends Rising and Top related queries into Google Ads Search Campaigns. It would help reduce some manual daily work and errors who is working or monitoring Search Campaigns and Google Trends keywords. Main code is written in Python 3.7.
 
 <img width="767" alt="スクリーンショット 2020-06-13 16 55 20" src="https://user-images.githubusercontent.com/62479342/84573368-02184280-ad98-11ea-905f-fffa9e1c5d69.png">
 
@@ -116,7 +116,7 @@ https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOk
 
 Google Ads Script [Sample Code](https://github.com/tsunoyu/pytrends_googleads/blob/master/trends_googleads_script.js)
 
-Search Campaings and AdGroup has to be created in adcance in Google Ads UI separately.
+Search Campaigns and AdGroup has to be created in adcance in Google Ads UI separately.
 The sample code will update each four Spreadsheet sheets keywords into separate AdGroup following the Spreadsheet structure mentioned in step 1.
 
 - Create Campaign and AdGroup
