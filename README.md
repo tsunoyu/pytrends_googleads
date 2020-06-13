@@ -2,9 +2,11 @@
 
 ## Overview
 
-This solution was created to automate the process of adding relevant Google Trends keyword into Google Ads Search Campaigns. It would help reducing some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
+This solution was created to automate the process of adding relevant Google Trends Rising and Top related queries into Google Ads Search Campaigns. It would help reducing some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
 
 <img width="767" alt="スクリーンショット 2020-06-13 16 55 20" src="https://user-images.githubusercontent.com/62479342/84573368-02184280-ad98-11ea-905f-fffa9e1c5d69.png">
+
+<img width="1009" alt="スクリーンショット 2020-06-13 18 24 59" src="https://user-images.githubusercontent.com/62479342/84575247-a3f15c80-ada3-11ea-92e3-dd9310b36c35.png">
 
 Detail Setup Process written in Medium.com -- [LINK](https://pypi.org/project/pytrends/)
 
@@ -36,7 +38,28 @@ Detail Setup Process written in Medium.com -- [LINK](https://pypi.org/project/py
 
 ## Setup Guide
 
-### Setup Google Spreasheet API Credencial
+### Setup Google Spreasheet and API Credencial
+
+Create New Spreadsheet (or copy [this sample Spreadsheet](https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4/edit#gid=0)) to store trending keywords you get from Google Trends.
+The Spreadsheet needs following four tabs. 
+
+- rising_brand
+- rising_nonbrand
+- top_brand
+- top_nonbrand
+
+The brand tab stores the queries which includes the keyword you are referencing and the non brand will store which doesn't include it.
+
+
+**exammple)** You want to get Rising and Top related queries for **"toyota"**
+
+In this case the brand keyword you reference is **"toyota"**
+- rising_brand → "**toyota** camry 2020, ..."
+- rising_nonbrand → "nissan sentra 2020, ..."
+- top_brand → "**toyota** prius, ..."
+- top_nonbrand → "hybrid car, ..."
+
+
 Enable the Google Sheets API from below link in order to save data you get from pytreds.
 https://developers.google.com/sheets/api/quickstart/python
 
