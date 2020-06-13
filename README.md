@@ -105,18 +105,24 @@ https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOk
 - For **Source Code** select the **Zip Upload** option and uploads the following three files zipped together.
   - [main.py](https://github.com/tsunoyu/pytrends_googleads/blob/master/trends_cloud_function.py)
   - [requirements.txt](https://github.com/tsunoyu/pytrends_googleads/blob/master/requirements.txt)
-  - [credencials.json])(https://github.com/tsunoyu/pytrends_googleads/blob/master/credentials.json)
+  - [credencials.json](https://github.com/tsunoyu/pytrends_googleads/blob/master/credentials.json)
 
 <img width="545" alt="スクリーンショット 2020-06-13 19 14 26" src="https://user-images.githubusercontent.com/62479342/84576168-8d023880-adaa-11ea-82b6-698de4ab05f1.png">
 
 ### 5. Setup Google Ads Script
 
+Google Ads Script [Sample Code](https://github.com/tsunoyu/pytrends_googleads/blob/master/trends_googleads_script.js)
+
+Search Campaings and AdGroup has to be created in adcance in Google Ads UI separately.
+The sample code will update each four Spreadsheet sheets keywords into separate AdGroup following the Spreadsheet structure mentioned in step 1.
+
+- Create Campaign and AdGroup
+  - Ad Group for "rising_brand", "rising_nonbrand", "top_brand" and "top_nonbrand"
+- Create Google Ads Script
+- Schedule the Script daily or weekly basis depending on the function trigger frequency.
+
 <img width="907" alt="スクリーンショット 2020-06-13 19 08 30" src="https://user-images.githubusercontent.com/62479342/84576036-8c1cd700-ada9-11ea-92b9-4d59f04fdc9d.png">
 
-Spreadsheet needs following four tabs. 
 
-- rising_brand
-- rising_nonbrand
-- top_brand
-- top_nonbrand
+## Thank you for reading:)
 
