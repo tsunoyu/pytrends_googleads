@@ -42,7 +42,15 @@ https://developers.google.com/sheets/api/quickstart/python
 
 Save the file credentials.json. This file needs to be uploaded later into Google Cloud Function.
 
+[Sample Credencial JSON file](https://github.com/tsunoyu/pytrends_googleads/blob/master/CREDENTIALS.JSON)
+
 ### Setup Google Cloud Pub/Sub
+
+Create Google Cloud Pub/Sub Topic so that Google Cloud Function can be triggered.
+This Topic will recieve message from Google Cloud Scheduler which we will set up in the following section.
+
+<img width="714" alt="スクリーンショット 2020-06-13 17 44 44" src="https://user-images.githubusercontent.com/62479342/84574445-5faf8d80-ad9e-11ea-8c00-cda46d72022f.png">
+
 
 
 ### Setup Google Cloud Scheduler
@@ -51,4 +59,4 @@ Save the file credentials.json. This file needs to be uploaded later into Google
 ### Setup Google Cloud Function
 
 
-## Setup Google Ads Script
+### Setup Google Ads Script
