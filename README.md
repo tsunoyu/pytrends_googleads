@@ -61,6 +61,7 @@ In this case the brand keyword you reference is **"toyota"**
 
 
 Enable the Google Sheets API from below link in order to save data you get from pytreds.
+
 https://developers.google.com/sheets/api/quickstart/python
 
 Save the file credentials.json. This file needs to be uploaded later into Google Cloud Function.
@@ -77,6 +78,8 @@ This Topic will recieve message from Google Cloud Scheduler which we will set up
 
 
 ### Setup Google Cloud Scheduler
+
+<img width="540" alt="スクリーンショット 2020-06-13 18 50 13" src="https://user-images.githubusercontent.com/62479342/84575766-aa81d300-ada7-11ea-94d4-2461c270ec27.png">
 
 
 ### Setup Google Cloud Function
