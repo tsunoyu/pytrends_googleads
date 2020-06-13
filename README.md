@@ -2,7 +2,7 @@
 
 ## Overview
 
-This solution was created to automate the process of adding relevant Google Trends keyword into Google Ads Search Campaigns. It would help reducing some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords.
+This solution was created to automate the process of adding relevant Google Trends keyword into Google Ads Search Campaigns. It would help reducing some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
 
 <img width="767" alt="スクリーンショット 2020-06-13 16 55 20" src="https://user-images.githubusercontent.com/62479342/84573368-02184280-ad98-11ea-905f-fffa9e1c5d69.png">
 
@@ -24,13 +24,15 @@ Detail Setup Process written in Medium.com -- [LINK](https://pypi.org/project/py
 
 - Google Cloud
 
-  - Google Cloud Function -- [LINK](https://pypi.org/project/pytrends/)
+  - Google Cloud Function -- [LINK](https://cloud.google.com/functions/docs)
  
-  - Google Cloud Pub/Sub -- [LINK](https://pypi.org/project/pytrends/)
+  - Google Cloud Pub/Sub -- [LINK](https://cloud.google.com/pubsub/docs/)
  
-  - Google Cloud Scheduler -- [LINK](https://pypi.org/project/pytrends/)
+  - Google Cloud Scheduler -- [LINK](https://cloud.google.com/scheduler/docs/quickstart)
+  
+- Google Sheets API -- [LINK](https://developers.google.com/sheets/api)
 
-- Google Ads Script -- [LINK](https://pypi.org/project/pytrends/)
+- Google Ads Script -- [LINK](https://developers.google.com/google-ads/scripts/docs/your-first-script)
 
 ## Setup Guide
 
