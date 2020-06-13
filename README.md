@@ -1,20 +1,21 @@
-# <WIP> Automate adding Google Trends Keyword to Google Ads Search Campaigns
+# Automate adding Google Trends Keyword to Google Ads Search Campaigns
 
 ## Overview
 
-This solution was created to automate the process of adding relevant Google Trends Rising and Top related queries into Google Ads Search Campaigns. It would help reducing some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
+This solution was created to automate the process of adding relevant Google Trends Rising and Top related queries into Google Ads Search Campaigns. It would help reduce some manual daily work and errors who is working or monitoring Search Campaings and Google Trends keywords. Main code is written in Python 3.7.
 
 <img width="767" alt="スクリーンショット 2020-06-13 16 55 20" src="https://user-images.githubusercontent.com/62479342/84573368-02184280-ad98-11ea-905f-fffa9e1c5d69.png">
 
 <img width="1009" alt="スクリーンショット 2020-06-13 18 24 59" src="https://user-images.githubusercontent.com/62479342/84575247-a3f15c80-ada3-11ea-92e3-dd9310b36c35.png">
 
-Detail Setup Process written in Medium.com -- [LINK](https://pypi.org/project/pytrends/)
+<WIP> Detail Setup Process written in Medium.com -- [LINK](https://WIP)
 
 ## Important Notes
 - This solution will **NOT** guaranty any Search Ads performace 
 - pytrends API is not a Google Official API but it can be used for free
 - Running the Python code daily basis will incur some Google Cloud cost
-- It will not work if the the query does not have any volume to capture the trend Try to adjust the filter. ex) target from Global
+- It will not work if the query does not have any organic search volume to capture the search trend. 
+- Try to adjust the filter in case the search volume is low. ex) target from one country to Global
 - Consider adding filter or alert in Google Ads side to avoid sudden ads spend increase
 
 
@@ -38,7 +39,7 @@ Detail Setup Process written in Medium.com -- [LINK](https://pypi.org/project/py
 
 ## Setup Guide
 
-### 1. Setup Google Spreasheet and API Credencial
+### 1. Setup Google Spreadsheet and API Credencial
 
 Create New Spreadsheet (or copy [this sample Spreadsheet](https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4/edit#gid=0)) to store trending keywords you get from Google Trends.
 The Spreadsheet needs following four tabs. 
@@ -90,6 +91,8 @@ This Topic will recieve message from Google Cloud Scheduler which we will set up
   - "location"
   - "time_frame" → date range you want to refenerence
   - "ss_key" → Spreadsheet key you get from Spreadsheet URL.
+  - For more detail please follow the [pytrends API parameters](https://pypi.org/project/pytrends/)
+  
 
 **exammple)** Spreadsheet key for 
 https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4/edit#gid=0 is **"1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOkBx4"** after d/ till /edit.
