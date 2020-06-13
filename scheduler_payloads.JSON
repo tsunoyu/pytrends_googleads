@@ -1,0 +1,8 @@
+{
+    "query": "toyota",
+    "language": "en-US",
+    "location": "US",
+    "timezone": 360,
+    "time_frame": "now 1-d",
+    "ss_key":"INPUT THE ID FROM SPREADSHEET KEY"
+}
