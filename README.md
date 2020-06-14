@@ -116,7 +116,7 @@ https://docs.google.com/spreadsheets/d/1JNCdYSTR_fenS6AB0_RJAZ50nmt96tTPG1WMVgOk
 
 Google Ads Script [Sample Code](https://github.com/tsunoyu/pytrends_googleads/blob/master/trends_googleads_script.js)
 
-Search Campaigns and AdGroup has to be created in adcance in Google Ads UI separately.
+Search Campaigns and AdGroup has to be created in advance in Google Ads UI separately.
 The sample code will update each four Spreadsheet sheets keywords into separate AdGroup following the Spreadsheet structure mentioned in step 1.
 
 - Create Campaign and AdGroup
