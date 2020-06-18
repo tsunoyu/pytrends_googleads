@@ -1,3 +1,6 @@
+// Copyright 2020 Google LLC.
+// SPDX-License-Identifier: Apache-2.0
+
 // Create first the following four Ad Groups in Google Ads 
 var adgroup_name_arr =  ["ADG_RisingKwd_Brand", "ADG_RisingKwd_nonBrand","ADG_TopKwd_Brand","ADG_TopKwd_nonBrand"];
 
