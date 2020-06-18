@@ -1,10 +1,5 @@
-################################################################################
-# * Created a service account
-# * Give SA access to the sheet
-# * pip install -U gspread pytrends
-# * pip freeze > requirements.txt
-################################################################################
-
+# * Copyright 2020 Google LLC.
+# * SPDX-License-Identifier: Apache-2.0
 import datetime
 import json
 import base64
@@ -12,19 +7,14 @@ import gspread
 from pytrends.request import TrendReq
 
 DEFAULT_PARAMS = {
-    'language': 'en-US',
-    'location': 'US',
-    'timezone': 360,
-    'time_frame': 'now 1-d'
+    'language': 'en-US','location': 'US', 'timezone': 360,'time_frame': 'now 1-d'
 }
-
 
 def get_params(json_message):
     params = {}
     params.update(DEFAULT_PARAMS)
     params.update(json_message)
     return params
-
 
 def google_trend_data(query, params):
     pytrends = TrendReq(hl=params['language'],
@@ -40,7 +30,6 @@ def google_trend_data(query, params):
     rising_q = daily_related_q[query]['rising']
     # Top Trend Queries
     top_q = daily_related_q[query]['top']
-
     results = {}
 
     if rising_q is None:
@@ -66,9 +55,7 @@ def google_trend_data(query, params):
 
         results['top_brand'] = top_brand_kw['query'].tolist()
         results['top_nonbrand'] = top_nonbrand_kw['query'].tolist()
-
     return results
-
 
 def save_trends_to_ss(trends_obj, spreadsheet_key):
     if not trends_obj:
@@ -94,15 +81,13 @@ def save_trends_to_ss(trends_obj, spreadsheet_key):
         sheet = workbook.worksheet('top_nonbrand')
         sheet.insert_row([str(today)] + trends_obj['top_nonbrand'], 2)
 
-
 def handle_request(event, context):
     pubsub_message = base64.b64decode(event['data']).decode('utf-8')
     try:
         json_message = json.loads(pubsub_message)
     except:
         print('ERROR: I couldn\'t parse the message as JSON')
-        return
-    
+        return    
     params = get_params(json_message)
 
     if 'query' not in params:
