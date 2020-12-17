@@ -8,7 +8,7 @@ This solution was created to automate the process of adding relevant Google Tren
 
 <img width="1009" alt="スクリーンショット 2020-06-13 18 24 59" src="https://user-images.githubusercontent.com/62479342/84575247-a3f15c80-ada3-11ea-92e3-dd9310b36c35.png">
 
-<WIP> Detail Setup Process written in Medium.com -- [LINK](https://WIP)
+<WIP> Detail Setup Process written in Medium.com -- [LINK](https://medium.com/@tsunochi17/automate-adding-google-trends-keyword-to-google-ads-search-campaigns-e6808364ca4)
 
 ## Important Notes
 - This solution will **NOT** guarantee any Search Ads performance improvement
